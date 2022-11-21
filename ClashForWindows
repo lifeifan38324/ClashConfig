@@ -41,7 +41,7 @@ proxy-providers:
   闪电机场:
     type: http
     path: ./profiles/proxies/闪电机场.yaml
-    url: https://apt-y-install.sd-yun.xyz/api/v1/client/subscribe?token=b565b65bd0e53cc3895e5f2dd0146b30&flag=clash
+    url: ""
     interval: 3600
     filter: ""
     health-check:
