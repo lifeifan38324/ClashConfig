@@ -1,5 +1,9 @@
 # MyDirect
 
-DOMAIN-SUFFIX,1password.com:443
-DOMAIN-SUFFIX,agilebits.com:443
+DOMAIN,bn5.1password.com:443
+DOMAIN,1password.com:443
+DOMAIN,my.1password.com:443
+DOMAIN,cache.agilebits.com:443
+DOMAIN-KEYWORD,1password
+DOMAIN-KEYWORD,agilebits
 DOMAIN-KEYWORD,onedrive
