@@ -1,0 +1,4 @@
+# 匹配规则,匹配内容
+
+DOMAIN-SUFFIX,1password.com
+DOMAIN-KEYWORD,onedrive
