@@ -30,7 +30,7 @@ proxy-providers:
   一元机场:
     type: http
     path: ./profiles/proxies/一元机场.yaml
-    url: https://xn--4gq62f52gdss.com/api/v1/client/subscribe?token=22de0f2f0aa9ccc5f78df6357dd45c44&flag=clash
+    url: (填写对应的url地址)&flag=clash
     interval: 3600
     filter: 
     health-check:
@@ -41,7 +41,7 @@ proxy-providers:
   辣条机场:
     type: http
     path: ./profiles/proxies/辣条机场.yaml
-    url: https://lameizi.buzz/api/v1/client/subscribe?token=705f87f6d9482b61a3c2a2ffe4e0cac7&flag=clash
+    url: (填写对应的url地址)&flag=clash
     interval: 3600
     filter: 
     health-check:
@@ -52,7 +52,7 @@ proxy-providers:
 proxy-groups:
   - name: PROXY
     type: select
-    proxies: [一元,辣条]
+    proxies: [所有,一元,辣条]
   - name: 所有
     type: url-test
     url: http://www.gstatic.com/generate_204
