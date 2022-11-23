@@ -1,10 +1,6 @@
 # MyDirect
-# payload:
-#   - DOMAIN,b5n.1password.com
+# DOMAIN,b5n.1password.com
 
-payload:
-  - DOMAIN-KEYWORD,1password
-  - DOMAIN-KEYWORD,agilebits
-  - DOMAIN-KEYWORD,onedrive
-  - DOMAIN,clash.razord.top
-  - DOMAIN,yacd.haishan.me
+DOMAIN-KEYWORD,1password
+DOMAIN-KEYWORD,agilebits
+DOMAIN-KEYWORD,onedrive
