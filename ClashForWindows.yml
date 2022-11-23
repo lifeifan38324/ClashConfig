@@ -38,10 +38,29 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
       interval: 600
       tolerance: 100
+  辣条机场:
+    type: http
+    path: ./profiles/proxies/辣条机场.yaml
+    url: https://lameizi.buzz/api/v1/client/subscribe?token=705f87f6d9482b61a3c2a2ffe4e0cac7&flag=clash
+    interval: 3600
+    filter: 
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 600
+      tolerance: 100
 proxy-groups:
   - name: PROXY
     type: select
-    proxies: [一元]
+    proxies: [一元,辣条]
+  - name: 所有
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 100
+    use:
+      - 一元机场
+      - 辣条机场
   - name: 一元
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -49,6 +68,13 @@ proxy-groups:
     tolerance: 100
     use:
       - 一元机场
+  - name: 辣条
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 100
+    use:
+      - 辣条机场
 rule-providers:
   reject:
     type: http
