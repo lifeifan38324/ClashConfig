@@ -30,7 +30,7 @@ proxy-providers:
   一元机场:
     type: http
     path: ./profiles/proxies/一元机场.yaml
-    url: "url1"
+    url: https://xn--4gq62f52gdss.com/api/v1/client/subscribe?token=22de0f2f0aa9ccc5f78df6357dd45c44&flag=clash
     interval: 3600
     filter: 专线
     health-check:
@@ -41,7 +41,7 @@ proxy-providers:
   闪电机场:
     type: http
     path: ./profiles/proxies/闪电机场.yaml
-    url: ""
+    url: https://apt-y-install.sd-yun.xyz/api/v1/client/subscribe?token=b565b65bd0e53cc3895e5f2dd0146b30&flag=clash
     interval: 3600
     filter: ""
     health-check:
@@ -52,9 +52,7 @@ proxy-providers:
 proxy-groups:
   - name: PROXY
     type: select
-    proxies:
-      - 一元
-      - 闪电
+    proxies: [一元,闪电]
   - name: 一元
     type: url-test
     url: http://www.gstatic.com/generate_204
