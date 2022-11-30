@@ -27,9 +27,9 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxy-providers:
-  一元机场:
+  主力机场:
     type: http
-    path: ./profiles/proxies/一元机场.yaml
+    path: ./profiles/proxies/主力机场.yaml
     url: (填写对应的url地址)&flag=clash
     interval: 3600
     filter: 
@@ -38,9 +38,9 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
       interval: 600
       tolerance: 100
-  辣条机场:
+  备用机场:
     type: http
-    path: ./profiles/proxies/辣条机场.yaml
+    path: ./profiles/proxies/备用机场.yaml
     url: (填写对应的url地址)&flag=clash
     interval: 3600
     filter: 
@@ -52,29 +52,29 @@ proxy-providers:
 proxy-groups:
   - name: PROXY
     type: select
-    proxies: [所有,一元,辣条]
+    proxies: [所有,主力,备用]
   - name: 所有
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 600
     tolerance: 100
     use:
-      - 一元机场
-      - 辣条机场
-  - name: 一元
+      - 主力机场
+      - 备用机场
+  - name: 主力
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 600
     tolerance: 100
     use:
-      - 一元机场
-  - name: 辣条
+      - 主力机场
+  - name: 备用
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 600
     tolerance: 100
     use:
-      - 辣条机场
+      - 备用机场
 rule-providers:
   reject:
     type: http
