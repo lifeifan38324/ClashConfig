@@ -97,7 +97,7 @@ proxy-groups:
     interval: 600
     tolerance: 100
     use:
-      - 美国
+      - 主力机场
 rule-providers:
   reject:
     type: http
