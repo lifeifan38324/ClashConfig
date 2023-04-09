@@ -217,6 +217,8 @@ rule-providers:
     path: ./profiles/rules/applications.yaml
     interval: 86400
 rules:
+  - DOMAIN,access.mypikpak.com,PROXY
+  - DOMAIN-KEYWORD,pikpak,DIRECT
   - DOMAIN-KEYWORD,openai,OpenAi
   - DOMAIN-KEYWORD,1password,DIRECT
   - DOMAIN-KEYWORD,onedrive,DIRECT
