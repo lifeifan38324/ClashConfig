@@ -82,7 +82,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
       interval: 600
       tolerance: 100
-   ChatGPT:
+  ChatGPT:
     type: http
     path: ./profiles/proxies/主力机场.yaml
     url: (填写对应的url地址)&flag=clash
