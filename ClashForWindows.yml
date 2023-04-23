@@ -43,7 +43,7 @@ proxy-providers:
     path: ./profiles/proxies/备用机场.yaml
     url: (填写对应的url地址)&flag=clash
     interval: 3600
-    filter: 
+    filter: -\d\d
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -60,39 +60,39 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
       interval: 600
       tolerance: 100
-  德国:
-    type: http
-    path: ./profiles/proxies/主力机场.yaml
-    url: (填写对应的url地址)&flag=clash
-    interval: 3600
-    filter: 德
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 600
-      tolerance: 100
-  英国:
-    type: http
-    path: ./profiles/proxies/主力机场.yaml
-    url: (填写对应的url地址)&flag=clash
-    interval: 3600
-    filter: 英
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 600
-      tolerance: 100
-  ChatGPT:
-    type: http
-    path: ./profiles/proxies/主力机场.yaml
-    url: (填写对应的url地址)&flag=clash
-    interval: 3600
-    filter: GPT
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 600
-      tolerance: 100
+#   德国:
+#     type: http
+#     path: ./profiles/proxies/主力机场.yaml
+#     url: (填写对应的url地址)&flag=clash
+#     interval: 3600
+#     filter: 德
+#     health-check:
+#       enable: true
+#       url: http://www.gstatic.com/generate_204
+#       interval: 600
+#       tolerance: 100
+#   英国:
+#     type: http
+#     path: ./profiles/proxies/主力机场.yaml
+#     url: (填写对应的url地址)&flag=clash
+#     interval: 3600
+#     filter: 英
+#     health-check:
+#       enable: true
+#       url: http://www.gstatic.com/generate_204
+#       interval: 600
+#       tolerance: 100
+#   ChatGPT:
+#     type: http
+#     path: ./profiles/proxies/主力机场.yaml
+#     url: (填写对应的url地址)&flag=clash
+#     interval: 3600
+#     filter: GPT
+#     health-check:
+#       enable: true
+#       url: http://www.gstatic.com/generate_204
+#       interval: 600
+#       tolerance: 100
 proxy-groups:
   - name: PROXY
     type: select
@@ -130,7 +130,7 @@ proxy-groups:
     interval: 600
     tolerance: 100
     use:
-      - ChatGPT
+      - 美国
 rule-providers:
   reject:
     type: http
