@@ -221,7 +221,7 @@ rules:
   - RULE-SET,google,DIRECT
   - RULE-SET,proxy,PROXY
   - RULE-SET,direct,DIRECT
-  - RULE-SET,telegramcidr,PROXY
-  - GEOIP,DIRECT
-  - GEOIP,CN,DIRECT
+  - RULE-SET,telegramcidr,PROXY,no-resolve
+  - GEOIP,LAN,DIRECT,no-resolve
+  - GEOIP,CN,DIRECT,no-resolve
   - MATCH,PROXY
