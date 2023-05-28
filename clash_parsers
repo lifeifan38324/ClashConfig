@@ -4,19 +4,19 @@ parsers:
       mix-rule-providers:
         clash-proxy:
           type: http
-          behavior: domain
+          behavior: classical
           url: https://raw.githubusercontent.com/lifeifan38324/ClashConfig/main/proxy/clash-proxy.list
           path: ./profiles/rules/clash-proxy.yaml
           interval: 86400
         clash-direct:
           type: http
-          behavior: domain
+          behavior: classical
           url: https://raw.githubusercontent.com/lifeifan38324/ClashConfig/main/direct/clash-direct.list
           path: ./profiles/rules/clash-direct.yaml
           interval: 86400
         clash-direct-after:
           type: http
-          behavior: domain
+          behavior: classical
           url: https://raw.githubusercontent.com/lifeifan38324/ClashConfig/main/direct/clash-direct-after.list
           path: ./profiles/rules/clash-direct-after.yaml
           interval: 86400
