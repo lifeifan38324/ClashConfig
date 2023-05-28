@@ -1,3 +1,0 @@
-DOMAIN,access.mypikpak.com
-DOMAIN-KEYWORD,xiaobi
-DOMAIN-KEYWORD,bing
