@@ -51,9 +51,8 @@ proxy-providers:
       interval: 600
       tolerance: 100
   美国:
-    type: http
+    type: file
     path: ./profiles/proxies/主力机场.yaml
-    url: (填写对应的url地址)&flag=clash
     interval: 3600
     filter: 美
     health-check:
