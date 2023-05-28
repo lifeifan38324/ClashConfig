@@ -1,0 +1,26 @@
+parsers:
+  - reg: ^.*$ # 正则匹配域名
+    yaml:
+      mix-rule-providers:
+        clash-proxy:
+          type: http
+          behavior: domain
+          url: https://raw.githubusercontent.com/lifeifan38324/ClashConfig/main/proxy/clash-proxy.list
+          path: ./profiles/rules/clash-proxy.yaml
+          interval: 86400
+        clash-direct:
+          type: http
+          behavior: domain
+          url: https://raw.githubusercontent.com/lifeifan38324/ClashConfig/main/direct/clash-direct.list
+          path: ./profiles/rules/clash-direct.yaml
+          interval: 86400
+        clash-direct-after:
+          type: http
+          behavior: domain
+          url: https://raw.githubusercontent.com/lifeifan38324/ClashConfig/main/direct/clash-direct-after.list
+          path: ./profiles/rules/clash-direct-after.yaml
+          interval: 86400
+      prepend-rules:
+        - RULE-SET,clash-direct,DIRECT
+        - RULE-SET,clash-proxy,🚀 节点选择
+        - RULE-SET,clash-direct-after,DIRECT
