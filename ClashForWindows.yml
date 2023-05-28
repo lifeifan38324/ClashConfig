@@ -31,7 +31,7 @@ proxy-providers:
   主力机场:
     type: http
     path: ./profiles/proxies/主力机场.yaml
-    url: https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=6c7b7abef9b70cbd4171cedca9db502d&flag=clash
+    url: https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=dec3dd1febbfa5e4e6e0a27c3dcd6c8e&flag=clash
     interval: 3600
     filter: 
     health-check:
@@ -233,7 +233,7 @@ rules:
   - RULE-SET,google,DIRECT
   - RULE-SET,proxy,PROXY
   - RULE-SET,direct,DIRECT
-  - RULE-SET,telegramcidr,PROXY,no-resolve
+  - RULE-SET,telegramcidr,PROXY
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,PROXY
