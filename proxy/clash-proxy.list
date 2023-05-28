@@ -1,4 +1,3 @@
-payload:
-  - DOMAIN,access.mypikpak.com
-  - DOMAIN-KEYWORD,xiaobi
-  - DOMAIN-KEYWORD,bing.com
+DOMAIN,access.mypikpak.com
+DOMAIN-KEYWORD,xiaobi
+DOMAIN-KEYWORD,bing
