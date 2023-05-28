@@ -5,15 +5,28 @@ mode: rule
 log-level: info
 external-controller: '127.0.0.1:9090'
 dns:
-    enable: false
+    enable: true
     ipv6: false
-    default-nameserver: [223.5.5.5, 119.29.29.29]
     enhanced-mode: fake-ip
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
-    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
+    nameserver:
+      - 114.114.114.114
+      - 223.5.5.5
+      - 8.8.8.8
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
-    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+    fallback-filter:
+      - +.stun.*.*
+      - +.stun.*.*.*
+      - +.stun.*.*.*.*
+      - +.stun.*.*.*.*.*
+      - "*.n.n.srv.nintendo.net"
+      - +.stun.playstation.net
+      - xbox.*.*.microsoft.com
+      - "*.*.xboxlive.com"
+      - "*.msftncsi.com"
+      - "*.msftconnecttest.com"
+      - WORKGROUP
 proxy-providers:
   主力机场:
     type: http
@@ -222,6 +235,6 @@ rules:
   - RULE-SET,proxy,PROXY
   - RULE-SET,direct,DIRECT
   - RULE-SET,telegramcidr,PROXY,no-resolve
-  - GEOIP,LAN,DIRECT,no-resolve
-  - GEOIP,CN,DIRECT,no-resolve
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
   - MATCH,PROXY
