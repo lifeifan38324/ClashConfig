@@ -1,4 +1,5 @@
 # 我的走代理的节点
-DOMAIN,access.mypikpak.com
+DOMAIN-SUFFIX,access.mypikpak.com
+DOMAIN-SUFFIX,access.mypikpak.me
 DOMAIN-KEYWORD,xiaobi
 DOMAIN-KEYWORD,bing
