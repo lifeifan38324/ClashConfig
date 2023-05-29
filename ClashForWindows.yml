@@ -31,7 +31,7 @@ proxy-providers:
   主力机场:
     type: http
     path: ./profiles/proxies/主力机场.yaml
-    url: https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=dec3dd1febbfa5e4e6e0a27c3dcd6c8e&flag=clash
+    url: (填写订阅链接)&flag=clash
     interval: 3600
     filter: 
     health-check:
@@ -42,7 +42,7 @@ proxy-providers:
   备用机场:
     type: http
     path: ./profiles/proxies/备用机场.yaml
-    url: https://sanfen003.xyz/api/v1/client/subscribe?token=114648662b56ed9e2bb02898dc3ccdac&flag=clash
+    url: (填写订阅链接)&flag=clash
     interval: 3600
     filter: -\d\d
     health-check:
