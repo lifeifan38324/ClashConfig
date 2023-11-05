@@ -23,6 +23,8 @@
    - 更多选项：默认即可，需要的可自行探索。
    - 定制功能：默认即可，需要的可自行探索。
 
+ps: 有一种利用worker修改订阅地址，并在之后恢复订阅地址的[安全防泄露的方法](https://github.com/bulianglin/psub/tree/main)。自用的地址为[https://lff.ffli7350.workers.dev/](https://lff.ffli7350.workers.dev/)。
+
 2. 点击生成订阅链接，在定制订阅复制订阅链接。
 
 3. 在CFW粘贴生成的链接，并下载。
@@ -33,7 +35,7 @@
 
 - 作者ACL4SSR编写的大量规则模板：[ACL4SSR/Clash/config](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config)
 
-   当然，这些规则模板可以直接在前端转换页面[ACL4SSR在线订阅转换](https://acl4ssr-sub.github.io/)直接使用
+- 当然，这些规则模板可以直接在前端转换页面[ACL4SSR在线订阅转换](https://acl4ssr-sub.github.io/)直接使用
 
 ### 1.4 自己书写规则模板
 
