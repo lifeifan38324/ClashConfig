@@ -3,5 +3,7 @@ DOMAIN-SUFFIX,access.mypikpak.com
 DOMAIN-SUFFIX,access.pikpak.me
 DOMAIN-SUFFIX,access.mypikpak.me
 DOMAIN-KEYWORD,xiaobi
-DOMAIN-KEYWORD,bing
+# DOMAIN-KEYWORD,bing
 DOMAIN,download.mypikpak.com
+DOMAIN,www.bing.com
+DOMAIN,x.com
