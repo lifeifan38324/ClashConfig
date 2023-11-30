@@ -1,8 +1,9 @@
 # 此文内容为需要走代理的自定义内容
 # 语法：匹配规则,匹配内容
+# DOMAIN-SUFFIX, DOMAIN-KEYWORD, DOMAIN, USER-AGENT, URL-REGEX...
 
 DOMAIN-KEYWORD,xiaobi
 DOMAIN,access.mypikpak.com
-DOMAIN,x.com
+DOMAIN-SUFFIX,x.com
 
 
