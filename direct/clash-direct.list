@@ -1,4 +1,5 @@
 # 代理之前走直连的节点
+
 DOMAIN-KEYWORD,1password
 IP-CIDR,43.138.144.37/32,no-resolve
-# DOMAIN-KEYWORD,onedrive
+DOMAIN-KEYWORD,onedrive
