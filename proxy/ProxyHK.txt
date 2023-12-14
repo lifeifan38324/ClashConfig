@@ -1,0 +1,7 @@
+# 走香港代理的规则
+DOMAIN-SUFFIX,vipfanhao.com
+DOMAIN-SUFFIX,access.mypikpak.com
+DOMAIN-SUFFIX,access.pikpak.me
+DOMAIN-SUFFIX,access.mypikpak.me
+DOMAIN,download.mypikpak.com
+
