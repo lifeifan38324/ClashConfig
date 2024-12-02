@@ -2,5 +2,5 @@
 DOMAIN-SUFFIX,access.mypikpak.com
 DOMAIN-SUFFIX,access.pikpak.me
 DOMAIN-SUFFIX,access.mypikpak.me
-DOMAIN,download.mypikpak.com
-
+DOMAIN-SUFFIX,download.mypikpak.com
+DOMAIN-SUFFIX,inapp.mypikpak.com
