@@ -4,4 +4,5 @@ DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,gemini
 DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,twitter.com
+DOMAIN-REGEX,^.*client.*google.*$
 DOMAIN,clients4.google.com
