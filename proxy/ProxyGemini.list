@@ -1,3 +1,4 @@
 # Gemini的规则
 DOMAIN-KEYWORD,gemini
+DOMAIN-KEYWORD,google
 DOMAIN-REGEX,^.*client.*google.*$
