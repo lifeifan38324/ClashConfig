@@ -1,5 +1,6 @@
 # 走美国代理的规则
 DOMAIN-KEYWORD,fanhao
 DOMAIN-KEYWORD,openai
+DOMAIN-KEYWORD,grok
 DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,twitter.com
