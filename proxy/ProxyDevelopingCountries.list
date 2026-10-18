@@ -1,12 +1,13 @@
 # 走发展中国家的代理规则
-DOMAIN-SUFFIX,user.mypikpak.com
-DOMAIN-SUFFIX,access.mypikpak.com
-DOMAIN-SUFFIX,access.mypikpak.me
-DOMAIN-SUFFIX,access.pikpak.me
-DOMAIN-SUFFIX,access.pikpakdrive.com
-DOMAIN-SUFFIX,access.mypikpak.net
-DOMAIN-SUFFIX,www.mypikpak.com
-DOMAIN-SUFFIX,inapp.mypikpak.com
-DOMAIN-SUFFIX,dav.mypikpak.com
-DOMAIN,mypikpak.com
-DOMAIN,mypikpak.net
+DOMAIN-KEYWORD,pikpak
+# DOMAIN-SUFFIX,user.mypikpak.com
+# DOMAIN-SUFFIX,access.mypikpak.com
+# DOMAIN-SUFFIX,access.mypikpak.me
+# DOMAIN-SUFFIX,access.pikpak.me
+# DOMAIN-SUFFIX,access.pikpakdrive.com
+# DOMAIN-SUFFIX,access.mypikpak.net
+# DOMAIN-SUFFIX,www.mypikpak.com
+# DOMAIN-SUFFIX,inapp.mypikpak.com
+# DOMAIN-SUFFIX,dav.mypikpak.com
+# DOMAIN,mypikpak.com
+# DOMAIN,mypikpak.net
