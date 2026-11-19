@@ -1,5 +1,7 @@
 # 走发展中国家的代理规则
 DOMAIN-KEYWORD,pikpak
+DOMAIN-KEYWORD,pickpack
+PROCESS-NAME,com.pikcloud.pikpak
 # DOMAIN-SUFFIX,user.mypikpak.com
 # DOMAIN-SUFFIX,access.mypikpak.com
 # DOMAIN-SUFFIX,access.mypikpak.me
